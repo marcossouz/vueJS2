@@ -5,9 +5,9 @@
     <button v-on:click="somar(5, $event)">Somar</button>
     <p v-on:mousemove="atualizarXY">
         Mouse: {{ x }} e {{ y }}
-        <span v-on:mousemove.stop.prevent="">PARAR AQUI!!!</span>
+        <span v-on:mousemove.stop="">PARAR AQUI!!!</span>
     </p>
-    <a v-on:click.prevent="" href="http://google.com.br">Google</a>
+    <a v-on:click="naoNavegar" href="http://google.com.br">Google</a>
 </div>
 
 <script>
@@ -26,7 +26,13 @@
             atualizarXY(event){
                 this.x = event.clientY
                 this.y = event.clientX
-            }
+            },
+            naoNavegar(event){
+                event.preventDefault()
+            },
+            //parar(event) {
+            //    event.stopPropagation()
+            //}
         }
     })
 </script>
