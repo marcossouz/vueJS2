@@ -5,9 +5,9 @@ new Vue({
     },
     methods: {
         exibirAlerta() {
-            alert('Botão Clicado.')
+            alert('Estou alertando agora!')
         },
-        capturaValor(event) {
+        alterarValor(event) {
             this.valor = event.target.value
         }
     }

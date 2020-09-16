@@ -9,14 +9,18 @@
     <!-- 2) Escute o evento "keydown" e armazene o valor na propriedade
         data (dica: event.target.value) -->
     <div>
-        <input v-on:keydown="capturaValor" type="text">
+        forma direta<input v-on:keydown="valor = $event.target.value" type="text">
+        <br>
+        forma com função<input v-on:keydown="alterarValor" type="text">
         <p>{{ valor }}</p>
     </div>
     
     <!-- 3) Ajuste o exemplo 2 para disparar o evento "keydown" somente
         quando a tecla for ENTER -->
     <div>
-        <input v-on:keydown.enter="capturaValor" type="text">
+        <h4>Só com enter</h4>
+        forma com função<input v-on:keydown.enter="alterarValor" type="text"><br>
+        forma direta<input v-on:keydown.enter="valor = $event.target.value" type="text">
         <p>{{ valor }}</p>
     </div>
 </div>
