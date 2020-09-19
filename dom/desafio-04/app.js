@@ -10,14 +10,24 @@ new Vue({
 		class3: '',
 		classUser5: '',
 		cor: 'blue',
-		corTexto: 'green'
+		corTexto: 'green',
+		myProgress: 'myProgress',
+		percentual: '0%',
+		barProgress: 'barProgress'
 	},
 	methods: {
 		iniciarEfeito() {
 			this.efeito = this.getEfeito
 		},
 		iniciarProgresso() {
-
+			count = 0
+			barProg = setInterval(() => {
+				count += 1
+				this.percentual = `${count}%`
+				if(count >= 100){
+					clearInterval(barProg)
+				}
+			}, 100)
 		}
 	},
 	watch: {
