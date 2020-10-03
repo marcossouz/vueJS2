@@ -70,8 +70,14 @@ new Vue({
             this.log += log_hist
         },
         curar() {
-            perc_jog = this.getRandomInt(1, 4)
-            this.controlePercentual('jogador', 'aumentar', perc_jog)
+            ganho_jog = this.getRandomInt(11, 15)
+            this.controlePercentual('jogador', 'aumentar', ganho_jog)
+            perc_jog = this.getRandomInt(5, 12)
+            this.controlePercentual('jogador', 'diminuir', perc_jog)
+            log_hist = this.log
+            this.log = `<div class="text-center msg msg-danger">MONSTRO ATINGIU O JOGADOR COM ${perc_jog}.</div>`
+            this.log += `<div class="text-center msg msg-success">JOGADOR GANHOU FORÇA DE ${ganho_jog}.</div>`
+            this.log += log_hist
         },
         controlePercentual(pers, acao, quant) {
             if (pers == 'jogador'){
