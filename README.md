@@ -3,8 +3,7 @@
 
 <p align="center">
 Exemplos e projetos durante o curso
-
-<a href="https://www.udemy.com/course/vue-js-completo/"> Curso Vue JS 2 - O Guia Completo (incl. Vue Router & Vuex)</a>
+<a align="center" href="https://www.udemy.com/course/vue-js-completo/"> Curso Vue JS 2 - O Guia Completo (incl. Vue Router & Vuex)</a>
 </p>
 
 
