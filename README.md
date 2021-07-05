@@ -1,9 +1,11 @@
-# vueJS2-curso1
+<h1 align="center"> vueJS2</h1>
 
 
+<p align="center">
 Exemplos e projetos durante o curso
 
-https://www.udemy.com/course/vue-js-completo/
+<a href="https://www.udemy.com/course/vue-js-completo/"> Curso Vue JS 2 - O Guia Completo (incl. Vue Router & Vuex)</a>
+</p>
 
 
 <h4 align="center"> 
