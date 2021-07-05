@@ -5,6 +5,11 @@ Exemplos e projetos durante o curso
 
 https://www.udemy.com/course/vue-js-completo/
 
+
+<h4 align="center"> 
+	🚧  Em andamento... Aula 153 🚧
+</h4>
+
 ## Links Úteis:
 
 
